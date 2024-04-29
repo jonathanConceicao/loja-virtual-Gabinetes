@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 56px;
+}
+
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.container-flex{
+    display: flex;
+}
+
+#sobre-a-loja img {
+    margin-right: 24px;
+    margin-top: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-gabinetes {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.lista-gabinetes li{
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-gabinetes li img {
+    max-width: 100%;
+}
+
+.lista-gabinetes li h3 {
+    margin: 16px 0;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+
+
+
+
+@media screen and (max-width:767px) {
+    .conteudo {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .container {
+        display: block;
+        font-size: 1.5em;
+    }
+    
+    .container img {
+        margin-right: 0;
+    }
+
+
+
+    
+    header div.container {
+        flex-direction: column;
+    }
+
+    .submenu {
+        display: block;
+        width: 100px;
+        position: relative;
+        border: none;
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    .menu > li {
+        clear: both;
+    }
+
+    .submenu li {
+        display: block;
+        padding: 8px;
+    }
+
+    .botao-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        padding: 16px;
+    }
+
+    .botao-menu button {
+        padding: 8px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .botao-menu{
+        display: none;
+    }
+
+
+    .produtos{
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .botao-menu {
+        display: none;
+    }
+}
+
+
+
